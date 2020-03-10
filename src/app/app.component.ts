@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.styl']
 })
 export class AppComponent {
-  title = 'ngExample';
+  foo1 = null;
+  foo = {
+    aaa: 0,
+    foo: 1
+  };
+  title = 'Tour of Heroes';
+  evilTitle = 'Template <script>alert("evil never sleeps")</script> Syntax';
 }
