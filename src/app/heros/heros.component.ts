@@ -3,6 +3,7 @@ import { Hero } from '../hero';
 import {HEROES} from '../mock-heros';
 import { HeroService } from '../hero.service';
 import { MessageService } from '../message.service';
+
 @Component({
   selector: 'app-heros',
   templateUrl: './heros.component.html',
@@ -20,6 +21,9 @@ export class HerosComponent implements OnInit {
   getHeroes(): void {
     this.heroService.getHeroes()
       .subscribe(heroes => this.heros = heroes);
+  }
+  trackByItemId(item: Hero): number {
+    return item.id;
   }
   add(name: string) {
     name = name.trim();

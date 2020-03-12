@@ -8,6 +8,10 @@ import { HeroService } from '../hero.service';
   styleUrls: [ './dashboard.component.styl' ]
 })
 export class DashboardComponent implements OnInit {
+  styles: {} = {
+    color: 'red'
+  };
+
   heroes: Hero[] = [];
 
   constructor(private heroService: HeroService) { }

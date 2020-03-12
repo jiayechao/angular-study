@@ -1,6 +1,6 @@
 <h2 [ngClass]="aaa">My Heroes</h2>
 <ul class="heroes">
-  <li *ngFor="let hero of heros">
+  <li *ngFor="let hero of heros; trackBy: trackByItemId">
     <a routerLink="/detail/{{hero.id}}">
       <span class="badge">{{hero.id}}</span> {{hero.name}}
     </a>
