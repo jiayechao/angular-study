@@ -1,11 +1,11 @@
 <h2 [ngClass]="aaa">My Heroes</h2>
-<ul class="heroes">
+<ul #phone class="heroes">
   <li *ngFor="let hero of heros; trackBy: trackByItemId">
     <a routerLink="/detail/{{hero.id}}">
       <span class="badge">{{hero.id}}</span> {{hero.name}}
     </a>
     <button class="delete" title="delete hero"
-      (click)="delete(hero)">x</button>
+      (click)="delete(hero)">{{type(phone)}}</button>
   </li>
 </ul>
 <div>

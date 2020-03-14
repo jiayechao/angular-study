@@ -3,13 +3,15 @@ import { Routes, RouterModule } from '@angular/router';
 import { HerosComponent } from './heros/heros.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
+import { DemoComponent } from './demo/demo.component';
 
 const routes: Routes = [
   // 完全匹配
   { path: '', redirectTo: '/dashboard', pathMatch: 'full'},
   {path: 'heroes', component: HerosComponent},
   { path: 'dashboard', component: DashboardComponent },
-  {path: 'detail/:id', component: HeroDetailComponent}
+  {path: 'detail/:id', component: HeroDetailComponent},
+  {path: 'demo', component: DemoComponent}
 ];
 
 @NgModule({

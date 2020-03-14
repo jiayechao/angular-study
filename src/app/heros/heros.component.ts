@@ -17,6 +17,9 @@ export class HerosComponent implements OnInit {
     // 这一步也可以放在构造函数，但是不建议，构造函数应该尽可能简单。比如把构造函数的参数赋值给属性。 构造函数不应该做任何事。
     this.getHeroes();
   }
+  type(obj) {
+    return typeof obj;
+  }
   // 获取heroes
   getHeroes(): void {
     this.heroService.getHeroes()

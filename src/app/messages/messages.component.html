@@ -1,8 +1,11 @@
 <div *ngIf="messageService.messages.length">
 
   <h2>Messages</h2>
+  <p>kkk{{anotherName | json}}</p>
+  <p>{{a?.b}}</p>
+  <p>{{$any(this).c | json}}</p>
   <button class="clear"
           (click)="messageService.clear()">clear</button>
   <div *ngFor='let message of messageService.messages'> {{message}} </div>
-
+  <button (click)="changeParentItem(childItem)">点我改变父组件的值</button>
 </div>
