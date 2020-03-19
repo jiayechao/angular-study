@@ -4,7 +4,9 @@
   </label>
   <button type="submit">Submit</button>
 </form>
-<p>{{itemForm.value.name}}</p>
+<p (click)="edit()">{{itemForm.value.name}}</p>
 <div [hidden]="!itemForm.form.valid">
   <p>{{ submitMessage }}</p>
 </div>
+
+<app-child-demo [name]="childItem" [foo]="changeFoo" (childEvent)="changeFooI($event)"></app-child-demo>

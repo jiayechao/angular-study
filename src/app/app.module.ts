@@ -12,6 +12,7 @@ import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
 import { DemoComponent } from './demo/demo.component';
+import { ChildDemoComponent } from './child-demo/child-demo.component';
 
 // NgModule，它为组件提供了编译的上下文环境
 // 至少有一个引导应用的根模块，通常还有很多特性模块
@@ -24,7 +25,8 @@ import { DemoComponent } from './demo/demo.component';
     MessagesComponent,
     DashboardComponent,
     HeroSearchComponent,
-    DemoComponent
+    DemoComponent,
+    ChildDemoComponent
   ],
   imports: [
     BrowserModule,
