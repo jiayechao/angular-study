@@ -13,6 +13,8 @@ import { InMemoryDataService } from './in-memory-data.service';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
 import { DemoComponent } from './demo/demo.component';
 import { ChildDemoComponent } from './child-demo/child-demo.component';
+import { AdComponent } from './ad/ad.component';
+import { AdDirective } from './ad.directive';
 
 // NgModule，它为组件提供了编译的上下文环境
 // 至少有一个引导应用的根模块，通常还有很多特性模块
@@ -26,7 +28,9 @@ import { ChildDemoComponent } from './child-demo/child-demo.component';
     DashboardComponent,
     HeroSearchComponent,
     DemoComponent,
-    ChildDemoComponent
+    ChildDemoComponent,
+    AdComponent,
+    AdDirective
   ],
   imports: [
     BrowserModule,
