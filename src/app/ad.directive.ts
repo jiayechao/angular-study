@@ -5,6 +5,6 @@ import { Directive, ViewContainerRef } from '@angular/core';
 })
 export class AdDirective {
   // 依赖注入指令的宿主视图
-  constructor(public viewContentRef: ViewContainerRef) { }
+  constructor(public viewContainerRef: ViewContainerRef) { }
 
 }

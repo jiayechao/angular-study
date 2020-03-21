@@ -15,6 +15,7 @@ import { DemoComponent } from './demo/demo.component';
 import { ChildDemoComponent } from './child-demo/child-demo.component';
 import { AdComponent } from './ad/ad.component';
 import { AdDirective } from './ad.directive';
+import { HighlightDirective } from './highlight.directive';
 
 // NgModule，它为组件提供了编译的上下文环境
 // 至少有一个引导应用的根模块，通常还有很多特性模块
@@ -30,7 +31,8 @@ import { AdDirective } from './ad.directive';
     DemoComponent,
     ChildDemoComponent,
     AdComponent,
-    AdDirective
+    AdDirective,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
