@@ -1,6 +1,9 @@
 <div class="ad-banner-example">
   <h3 [appHighlight]="'red'" defaultColor="violet">Advertisements</h3>
   <h3 appHighlight defaultColor="violet">Advertisements</h3>
-  <button (click)="show()">点我</button>
+  <p *appUnless="condition">我是测试自定义结构指令unless的</p>
+  <button (click) = "switcCondition()">点我切换</button>
+  <br />
+  <button *ngIf="true" (click)="show()">点我</button>
   <ng-template appAd></ng-template>
 </div>

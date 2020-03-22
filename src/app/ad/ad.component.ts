@@ -30,11 +30,15 @@ export class BComponent {
 })
 export class AdComponent implements OnInit {
   i = 0;
+  condition = true;
   @ViewChild(AdDirective, {static: true}) appAd: AdDirective;
   constructor(
     private componentFactoryResolver: ComponentFactoryResolver,
     private popupService: PopupService) { }
 
+  switcCondition() {
+    this.condition = !this.condition;
+  }
   // 切换
   switchComponent() {
     // 获取一个组件工厂实例
