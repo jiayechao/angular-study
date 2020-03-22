@@ -31,6 +31,7 @@ export class BComponent {
 export class AdComponent implements OnInit {
   i = 0;
   condition = true;
+  birthday = new Date(1990, 4, 20);
   @ViewChild(AdDirective, {static: true}) appAd: AdDirective;
   constructor(
     private componentFactoryResolver: ComponentFactoryResolver,

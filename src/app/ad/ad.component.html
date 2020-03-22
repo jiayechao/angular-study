@@ -6,4 +6,6 @@
   <br />
   <button *ngIf="true" (click)="show()">点我</button>
   <ng-template appAd></ng-template>
+  <p>生日： {{ birthday | date: "yyyy-MM-dd" }}</p>
+  <p>{{  birthday | date:'fullDate' | lowercase}}</p>
 </div>
