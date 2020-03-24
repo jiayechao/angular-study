@@ -5,6 +5,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { DemoComponent } from './demo/demo.component';
 import { AdComponent } from './ad/ad.component';
+import { FormdemoComponent } from './formdemo/formdemo.component';
 
 const routes: Routes = [
   // 完全匹配
@@ -13,7 +14,8 @@ const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   {path: 'detail/:id', component: HeroDetailComponent},
   {path: 'demo', component: DemoComponent},
-  {path: 'ad', component: AdComponent}
+  {path: 'ad', component: AdComponent},
+  {path: 'form', component: FormdemoComponent}
 ];
 
 @NgModule({

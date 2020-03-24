@@ -1,0 +1,36 @@
+<p>我是响应式表单</p>
+<input type="text" [formControl]="name">
+<p>我输入了{{name.value}}</p>
+<p>我现在的状态{{name.status}}</p>
+<button (click)="updateName()">修改name</button>
+
+<form [formGroup]="fullname" (ngSubmit)="onSubmit()">
+firsname: <input type="text" formControlName="firstname">
+lastname: <input type="text" formControlName="lastname">
+
+<div formGroupName="address">
+  <h3>Address</h3>
+
+  <label>
+    Street:
+    <input type="text" formControlName="street">
+  </label>
+
+  <label>
+    City:
+    <input type="text" formControlName="city">
+  </label>
+
+  <label>
+    State:
+    <input type="text" formControlName="state">
+  </label>
+
+  <label>
+    Zip Code:
+    <input type="text" formControlName="zip">
+  </label>
+</div>
+<p>my name is {{fullname.value.firstname + fullname.value.lastname}}</p>
+<button type="submit" [disabled]="!fullname.valid">Submit</button>
+</form>

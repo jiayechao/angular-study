@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HerosComponent } from './heros/heros.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { MessagesComponent } from './messages/messages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -17,6 +17,7 @@ import { AdComponent } from './ad/ad.component';
 import { AdDirective } from './ad.directive';
 import { HighlightDirective } from './highlight.directive';
 import { UnlessDirective } from './unless.directive';
+import { FormdemoComponent } from './formdemo/formdemo.component';
 
 // NgModule，它为组件提供了编译的上下文环境
 // 至少有一个引导应用的根模块，通常还有很多特性模块
@@ -34,7 +35,8 @@ import { UnlessDirective } from './unless.directive';
     AdComponent,
     AdDirective,
     HighlightDirective,
-    UnlessDirective
+    UnlessDirective,
+    FormdemoComponent,
   ],
   imports: [
     BrowserModule,
@@ -43,7 +45,8 @@ import { UnlessDirective } from './unless.directive';
     HttpClientModule,
     HttpClientInMemoryWebApiModule.forRoot(
       InMemoryDataService, { dataEncapsulation: false }
-    )
+    ),
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
